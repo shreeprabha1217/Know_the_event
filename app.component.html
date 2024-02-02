@@ -10,12 +10,7 @@
     </form>
   </div>
   <div class="content">
-    <p>
-     Event:{{numberData?.text}}
-    </p>
-    <p>
-      Year:{{numberData?.year}}
-    </p>
+    
     <ng-container *ngIf="numberData">
       <!-- Display Shock Image -->
       <div class="eyes">
@@ -24,6 +19,12 @@
     
     </ng-container>
     <ng-container *ngIf="!numberData">
+      <p>
+     Event:{{numberData?.text}}
+    </p>
+    <p>
+      Year:{{numberData?.year}}
+    </p>
       <!-- Display Shock Image -->
       <div class="eyes1">
         <img src="../assets/eye.jpg" alt="">
