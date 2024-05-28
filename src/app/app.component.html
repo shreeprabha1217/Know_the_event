@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="month">
+    <form (submit)="onSubmit()">
+      <input type="text" placeholder="Enter the month in digits" [(ngModel)]="month"[ngModelOptions]="{ standalone: true }" required>
+    </form>
+  </div>
+  <div class="number">
+    <form [formGroup]="myForm" (submit)="onSubmit()">
+      <input type="text" placeholder="Enter the date" [(ngModel)]="date" [ngModelOptions]="{ standalone: true }" required>
+    </form>
+  </div>
+  <div class="content">
+    
+    <ng-container *ngIf="numberData">
+      <!-- Display Shock Image -->
+      <p>
+        Event:{{numberData?.text}}
+       </p>
+       <p>
+         Year:{{numberData?.year}}
+       </p>
+      <div class="eyes">
+        <img src="../assets/shock.png" alt="">
+      </div>
+    
+    </ng-container>
+    <ng-container *ngIf="!numberData">
+      <!-- Display Shock Image -->
+      <div class="eyes1">
+        <img src="../assets/eye.jpg" alt="">
+      </div>
+    
+    </ng-container>
+  <!-- rest of your content -->
+</div>
