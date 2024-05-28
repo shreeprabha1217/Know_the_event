@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NewsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# Know_the_event
+Simple Angular project using which user can provide the date and month and know the historical event happened on the same day along with year of event.
+>>>>>>> origin/main
